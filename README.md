@@ -4,7 +4,7 @@ Jest snapshot serializer for THREE objects
 ## Usage
 
 ```sh
-$ npm install jest-enzyme --save-dev
+$ npm install three-snapshot-serializer --save-dev
 ```
 
 To use for all test files, add the following to package.json:
