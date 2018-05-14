@@ -1,6 +1,6 @@
 {
   "name": "three-snapshot-serializer",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Jest snapshot serializer for THREE objects",
   "homepage": "https://github.com/dbkaplun/three-snapshot-serializer",
   "repository": "https://github.com/dbkaplun/three-snapshot-serializer",
