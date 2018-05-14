@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`createSerializer should create a JSON snapshot for a THREE.Object3D 1`] = `
+Object {
+  "geometries": Array [
+    Object {
+      "depth": 1,
+      "height": 1,
+      "type": "BoxGeometry",
+      "uuid": "00000000-0000-0000-0000-000000000000",
+      "width": 1,
+    },
+  ],
+  "materials": Array [
+    Object {
+      "color": 32768,
+      "depthFunc": 3,
+      "depthTest": true,
+      "depthWrite": true,
+      "emissiveIntensity": undefined,
+      "linewidth": undefined,
+      "rotation": undefined,
+      "type": "MeshBasicMaterial",
+      "uuid": "00000000-0000-0000-0000-000000000001",
+    },
+  ],
+  "metadata": Object {
+    "generator": "Object3D.toJSON",
+    "type": "Object",
+    "version": 4.5,
+  },
+  "object": Object {
+    "geometry": "00000000-0000-0000-0000-000000000000",
+    "material": "00000000-0000-0000-0000-000000000001",
+    "matrix": Array [
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+    ],
+    "type": "Mesh",
+    "uuid": "00000000-0000-0000-0000-000000000002",
+  },
+}
+`;

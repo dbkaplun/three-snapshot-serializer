@@ -1,0 +1,12 @@
+{
+  "presets": [
+    ["env", {
+      "targets": {
+        "node": "8.9.4",
+        "browsers": "last 2 versions"
+      },
+      "useBuiltIns": true
+    }],
+    "stage-0"
+  ]
+}
