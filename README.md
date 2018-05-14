@@ -24,3 +24,11 @@ import { createSerializer } from 'three-snapshot-serializer';
 
 expect.addSnapshotSerializer(createSerializer({ dropUUIDs: true }));
 ```
+
+To use in one assertion:
+
+```js
+import { toJSON } from 'three-snapshot-serializer';
+
+expect(toJSON(obj)).matchesSnapshot();
+```
