@@ -1,4 +1,5 @@
 # three-snapshot-serializer
+
 Jest snapshot serializer for THREE objects
 
 ## Usage
@@ -20,7 +21,7 @@ To use for all test files, add the following to package.json:
 To use in one test file:
 
 ```js
-import { createSerializer } from 'three-snapshot-serializer';
+import { createSerializer } from "three-snapshot-serializer";
 
 expect.addSnapshotSerializer(createSerializer({ dropUUIDs: true }));
 ```
@@ -28,7 +29,7 @@ expect.addSnapshotSerializer(createSerializer({ dropUUIDs: true }));
 To use in one assertion:
 
 ```js
-import { toJSON } from 'three-snapshot-serializer';
+import { toJSON } from "three-snapshot-serializer";
 
 expect(toJSON(obj)).matchesSnapshot();
 ```
