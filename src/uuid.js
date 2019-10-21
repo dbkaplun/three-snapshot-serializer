@@ -1,9 +1,9 @@
 export const UUID_REGEX = /^[0-9A-F]{8}-[0-9A-F]{4}-[0-9A-F]{4}-[0-9A-F]{4}-[0-9A-F]{12}$/i;
-export const UUID_PLACEHOLDER = '00000000-0000-0000-0000-000000000000';
+export const UUID_PLACEHOLDER = "00000000-0000-0000-0000-000000000000";
 export const UUID_KEYS = {
   uuid: true,
   geometry: true,
-  material: true,
+  material: true
 };
 
 export function numToUUID(num) {
@@ -11,15 +11,13 @@ export function numToUUID(num) {
   return UUID_PLACEHOLDER.slice(0, -hex.length) + hex;
 }
 
-export function replaceUUIDs(
-  objJSONWithUUIDs,
-  foundUUIDs = {},
-) {
+export function replaceUUIDs(objJSONWithUUIDs, foundUUIDs = {}) {
   let objJSON = objJSONWithUUIDs;
   const newFoundUUIDs = foundUUIDs;
+
   if (Array.isArray(objJSON)) {
     objJSON = objJSON.map(childJSON => replaceUUIDs(childJSON, newFoundUUIDs));
-  } else if (typeof objJSON === 'object') {
+  } else if (typeof objJSON === "object") {
     Object.entries(objJSON).forEach(([key, val]) => {
       if (key in UUID_KEYS) {
         if (UUID_REGEX.test(val)) {
@@ -39,5 +37,6 @@ export function replaceUUIDs(
       }
     });
   }
+
   return objJSON;
 }

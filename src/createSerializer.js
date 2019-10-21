@@ -1,14 +1,14 @@
-import * as THREE from 'three';
+import { Object3D } from "three";
+import toJSON from "./toJSON";
 
-import toJSON from './toJSON';
-
-export default function createSerializer(opts) {
+export default function createSerializer(options) {
   return {
-    test(obj) {
-      return obj instanceof THREE.Object3D;
+    test(object) {
+      return object instanceof Object3D;
     },
-    print(obj, serializer) {
-      return serializer(toJSON(obj, opts));
-    },
+
+    print(object, serializer) {
+      return serializer(toJSON(object, options));
+    }
   };
 }

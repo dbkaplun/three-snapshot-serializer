@@ -1,3 +1,3 @@
-import createSerializer from './createSerializer';
+import createSerializer from "./createSerializer";
 
 export default createSerializer();
