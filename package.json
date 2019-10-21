@@ -1,10 +1,10 @@
 {
-  "name": "three-snapshot-serializer",
-  "version": "1.1.0",
+  "name": "threejs-snapshot-serializer",
+  "version": "1.2.0",
   "description": "Jest snapshot serializer for THREE objects",
-  "homepage": "https://github.com/dbkaplun/three-snapshot-serializer",
-  "repository": "https://github.com/dbkaplun/three-snapshot-serializer",
-  "bugs": "https://github.com/dbkaplun/three-snapshot-serializer/issues",
+  "homepage": "https://github.com/Bartozzz/threejs-snapshot-serializer",
+  "repository": "https://github.com/Bartozzz/threejs-snapshot-serializer",
+  "bugs": "https://github.com/Bartozzz/threejs-snapshot-serializer/issues",
   "main": "lib/index.js",
   "scripts": {
     "clean": "rm -rf lib/",
