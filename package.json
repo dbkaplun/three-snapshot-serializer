@@ -14,7 +14,7 @@
     "preversion": "npm run build && git add -A lib/ && npm test"
   },
   "dependencies": {
-    "three": "^0.92.0"
+    "three": "^0.137.0"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
